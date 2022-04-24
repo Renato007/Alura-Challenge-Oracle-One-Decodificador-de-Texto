@@ -1,8 +1,8 @@
 
 function criptografar(texto, chave, config) {
     var expressao = new RegExp(chave, "g");
-    var dadoCripitografado = texto.replace(expressao, config);
-    return dadoCripitografado;
+    var dadoModificado = texto.replace(expressao, config);
+    return dadoModificado;
   
   }
   /* Regras Codificador: 
@@ -13,14 +13,4 @@ function criptografar(texto, chave, config) {
 "u" é convertido para "ufat"
 Apenas letras minúsculas
 Não permite acentuação   
-*/
-
-/* Regras Decodificador: 
-"enter" é convertido para "e" 
-"imes" é convertido para "i"
-"ai" é convertido para "a"
-"ober" é convertido para "o"
-"ufat" é convertido para "u"
-Apenas letras minúsculas
-Não permite acentuação     
 */
